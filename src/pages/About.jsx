@@ -2,7 +2,7 @@ import AboutWrap from "../components/AboutWrap";
 import FAQGrid from "../components/FAQGrid";
 import MapTrail from "../components/MapTrail";
 import Contact from "../components/Contact";
-import Email from "../components/email";
+import Email from "../components/Email";
 
 const SAMPLE_FAQS = [
   {

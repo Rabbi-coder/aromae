@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { motion, AnimatePresence } from "framer-motion";
+import softBottle from "../assets/soft-bottle.png";
 
 const ContactSchema = z.object({
   name: z.string().min(2, "Please enter your name").max(100),
@@ -51,7 +52,7 @@ export default function Contact() {
     <section className="min-h-screen w-full flex flex-col items-center bg-gradient-to-b from-black to-[#060606] text-white px-6 py-24 relative">
       {/*floating soft bottle*/}
       <motion.img
-        src="src/assets/soft-bottle.png"
+        src={softBottle}
         alt="soft bottle"
         aria-hidden
         className="pointer-events-none absolute right-8 bottom-8 w-64 opacity-50"
