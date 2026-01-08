@@ -3,10 +3,17 @@ import ProductGrid from "../components/PerfumeGrid";
 import FilterBox from "../components/FilterBox";
 import StoryModal from "../components/StoryModal";
 
+// Import your images so Vite can find them after building
+import perfume1 from "../assets/perfume1.jpg";
+import perfume2 from "../assets/perfume2.jpg";
+import perfume3 from "../assets/perfume3.jpg";
+import perfume4 from "../assets/perfume4.jpg";
+import perfume5 from "../assets/perfume5.jpg";
+
 const PRODUCTS = [
   {
     id: 1,
-    image: "/src/assets/perfume1.jpg",
+    image: perfume1,
     name: "Noir Essence",
     price: "$120",
     notes: "Woody • Amber • Leather",
@@ -14,7 +21,7 @@ const PRODUCTS = [
   },
   {
     id: 2,
-    image: "/src/assets/perfume2.jpg",
+    image: perfume2,
     name: "Gold Reverie",
     price: "$140",
     notes: "Citrus • Jasmine • Oud",
@@ -22,7 +29,7 @@ const PRODUCTS = [
   },
   {
     id: 3,
-    image: "/src/assets/perfume3.jpg",
+    image: perfume3,
     name: "Velvet Mist",
     price: "$110",
     notes: "Floral • Musk • Vanilla",
@@ -30,7 +37,7 @@ const PRODUCTS = [
   },
   {
     id: 4,
-    image: "/src/assets/perfume4.jpg",
+    image: perfume4,
     name: "Azure Dream",
     price: "$130",
     notes: "Aquatic • Green • Sandalwood",
@@ -38,7 +45,7 @@ const PRODUCTS = [
   },
   {
     id: 5,
-    image: "/src/assets/perfume5.jpg",
+    image: perfume5,
     name: "Crimson Bloom",
     price: "$125",
     notes: "Rose • Patchouli • Amber",
@@ -46,7 +53,7 @@ const PRODUCTS = [
   },
   {
     id: 6,
-    image: "/src/assets/perfume1.jpg",
+    image: perfume1,
     name: "Noir Essence",
     price: "$120",
     notes: "Woody • Amber • Leather",
