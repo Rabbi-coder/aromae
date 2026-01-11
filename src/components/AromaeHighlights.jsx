@@ -1,6 +1,13 @@
 import { useState, useRef, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useCart } from "../context/CartContext";
+import oudRoyale from "../assets/oud-royale.png";
+import citrusBloom from "../assets/citrus-bloom.png";
+import velvetMist from "../assets/velvet-mist.png";
+import amberEssence from "../assets/amber-essence.png";
+import floralSymphony from "../assets/floral-symphony.png";
+import woodyAllure from "../assets/woody-allure.png";
+import sandalwoodSensation from "../assets/sandalwood-sensation.png";
 
 /* ----------------------
    Sample data
@@ -11,7 +18,7 @@ const SAMPLE_PERFUMES = [
     slug: "oud-royale",
     name: "Oud Royale",
     price: 149,
-    image: "src/assets/oud-royale.png",
+    image: oudRoyale,
     notes: {
       top: "Saffron, Bergamot",
       middle: "Agarwood (Oud), Damask Rose",
@@ -25,7 +32,7 @@ const SAMPLE_PERFUMES = [
     slug: "citrus-bloom",
     name: "Citrus Bloom",
     price: 119,
-    image: "src/assets/citrus-bloom.png",
+    image: citrusBloom,
     notes: {
       top: "Bergamot, Lemon Zest",
       middle: "Neroli, Jasmine",
@@ -39,7 +46,7 @@ const SAMPLE_PERFUMES = [
     slug: "velvet-mist",
     name: "Velvet Mist",
     price: 129,
-    image: "src/assets/velvet-mist.png",
+    image: velvetMist,
     notes: {
       top: "Pink Pepper, Pear",
       middle: "Tuberose, Cashmere Wood",
@@ -53,7 +60,7 @@ const SAMPLE_PERFUMES = [
     slug: "amber-essence",
     name: "Amber Essence",
     price: 139,
-    image: "src/assets/amber-essence.png",
+    image: amberEssence,
     notes: {
       top: "Bergamot, Saffron",
       middle: "Amber, Leather",
@@ -67,7 +74,7 @@ const SAMPLE_PERFUMES = [
     slug: "floral-symphony",
     name: "Floral Symphony",
     price: 129,
-    image: "src/assets/floral-symphony.png",
+    image: floralSymphony,
     notes: {
       top: "Peony, Freesia",
       middle: "Rose, Jasmine",
@@ -81,7 +88,7 @@ const SAMPLE_PERFUMES = [
     slug: "woody-allure",
     name: "Woody Allure",
     price: 149,
-    image: "src/assets/woody-allure.png",
+    image: woodyAllure,
     notes: {
       top: "Grapefruit, Black Pepper",
       middle: "Vetiver, Cedarwood",
@@ -95,7 +102,7 @@ const SAMPLE_PERFUMES = [
     slug: "sandalwood-sensation",
     name: "Sandalwood Sensation",
     price: 129,
-    image: "src/assets/sandalwood-sensation.png",
+    image: sandalwoodSensation,
     notes: {
       top: "Peony, Freesia",
       middle: "Rose, Jasmine",
