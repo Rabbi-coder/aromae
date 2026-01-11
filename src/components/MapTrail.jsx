@@ -5,7 +5,7 @@ const libraries = ["marker"]; // 🧠 keep static (solves reload warning)
 
 export default function AromaMap() {
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: "AIzaSyDpp67Lxv0Y_xlP7BCwC5kJZA2jJpD2o1I",
+    googleMapsApiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
     libraries, // ✅ static
   });
 
