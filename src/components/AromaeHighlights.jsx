@@ -146,18 +146,18 @@ function PerfumeTile({ item, onClick }) {
 
       {/* Name + arrow */}
       <motion.div
-        animate={{ y: hovered ? -10 : 0 }}
+        animate={{ y: hovered ? -5 : 0 }}
         transition={{
           type: "spring",
           stiffness: 200,
           damping: 20,
           mass: 0.8,
         }}
-        className="absolute bottom-2 text-center"
+        className="absolute text-center"
       >
-        <h4 className="text-sm md:text-base font-light tracking-wide text-white/90">
+        {/* <h4 className="text-sm md:text-base font-light tracking-wide text-white/90">
           {item.name}
-        </h4>
+        </h4> */}
 
         <AnimatePresence>
           {hovered && (
